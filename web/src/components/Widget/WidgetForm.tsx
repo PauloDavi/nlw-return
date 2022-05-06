@@ -18,7 +18,7 @@ export function WidgetForm() {
     <div
       className={[
         'p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto',
-        'bg-light-surface-primary dark:bg-dark-surface-primary',
+        'bg-surface-primary dark:bg-dark-surface-primary',
       ].join(' ')}
     >
       {feedbackSent ? (
@@ -39,13 +39,13 @@ export function WidgetForm() {
         </>
       )}
 
-      <footer className="text-xs text-light-text-secondary dark:text-dark-text-secondary">
+      <footer className="text-xs text-text-secondary dark:text-dark-text-secondary">
         Feito com ♥ por{' '}
         <a
           className={[
             'underline underline-offset-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2',
             'transition-colors disabled:opacity-50 disabled:hover:bg-brand-hover disabled:focus:bg-brand focus:ring-brand',
-            'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary',
+            'focus:ring-offset-surface-primary dark:focus:ring-offset-dark-surface-primary',
           ].join(' ')}
           href="https://portfolio-paulo-davi.vercel.app/"
         >

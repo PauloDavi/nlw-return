@@ -23,9 +23,9 @@ export function FeedbackSuccessStep({
           onClick={onFeedbackRestartRequested}
           className={[
             'py-2 px-6 mt-6 rounded-md border-transparent text-sm leading-6',
-            'bg-light-surface-secondary dark:bg-dark-surface-secondary',
-            'hover:bg-light-surface-secondary-hover dark:hover:bg-dark-surface-secondary-hover',
-            'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary',
+            'bg-surface-secondary dark:bg-dark-surface-secondary',
+            'hover:bg-surface-secondary-hover dark:hover:bg-dark-surface-secondary-hover',
+            'focus:ring-offset-surface-primary dark:focus:ring-offset-dark-surface-primary',
             'focus:ring-brand disabled:opacity-50 disabled:hover:bg-brand-hover disabled:focus:bg-brand',
             'transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2',
           ].join(' ')}

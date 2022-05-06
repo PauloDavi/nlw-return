@@ -5,7 +5,7 @@ import { WidgetForm } from './WidgetForm';
 
 export function WidgetButton() {
   return (
-    <Popover className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col">
+    <Popover className="fixed bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col">
       <Popover.Panel>
         <WidgetForm />
       </Popover.Panel>
@@ -15,7 +15,7 @@ export function WidgetButton() {
           'bg-brand rounded-full px-3 h-12',
           'text-text-on-brand-color flex items-center group self-end',
           'hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-offset-2',
-          'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary focus:ring-brand',
+          'focus:ring-offset-surface-primary dark:focus:ring-offset-dark-surface-primary focus:ring-brand',
           'disabled:opacity-50 disabled:hover:bg-brand-hover disabled:focus:bg-brand',
           'transition-colors',
         ].join(' ')}

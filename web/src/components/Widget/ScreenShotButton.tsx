@@ -34,11 +34,12 @@ export function ScreenShotButton({
         onClick={() => onScreenshotTook(null)}
         style={{
           backgroundImage: `url(${screenshot})`,
+          backgroundSize: 'cover',
         }}
         className={[
           'p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end transition-colors',
-          'text-light-text-secondary dark:text-dark-text-secondary',
-          'hover:text-light-text-primary dark:hover:text-dark-text-primary',
+          'text-text-secondary dark:text-dark-text-secondary',
+          'hover:text-text-primary dark:hover:text-dark-text-primary',
         ].join(' ')}
       >
         <Trash weight="fill" />
@@ -52,16 +53,16 @@ export function ScreenShotButton({
       onClick={handleTakeScreenshot}
       className={[
         'p-2 rounded-md border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2',
-        'bg-light-surface-secondary dark:bg-dark-surface-secondary',
+        'bg-surface-secondary dark:bg-dark-surface-secondary',
         'focus:ring-brand transition-colors',
-        'hover:bg-light-surface-secondary-hover dark:hover:bg-dark-surface-secondary-hover',
-        'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary',
+        'hover:bg-surface-secondary-hover dark:hover:bg-dark-surface-secondary-hover',
+        'focus:ring-offset-surface-primary dark:focus:ring-offset-dark-surface-primary',
       ].join(' ')}
     >
       {isTakingScreenshot ? (
         <Loading />
       ) : (
-        <Camera className="w-6 h-6 text-light-text-primary dark:text-dark-text-primary" />
+        <Camera className="w-6 h-6 text-text-primary dark:text-dark-text-primary" />
       )}
     </button>
   );
