@@ -23,6 +23,10 @@ API feita no NLW Return para submissão de feedbacks, salvando no banco de dados
 Após clonar o repositorio execute os seguintes passos para iniciar o servidor em modo de desenvolvimento
 
 ```zsh
+cd nlw-return/server
+```
+
+```zsh
 $ npm i
 \\ or
 $ yarn
