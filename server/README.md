@@ -1,4 +1,4 @@
-# Widget API
+# 🐛 BUG FOUND (API)
 
 API feita no NLW Return para submissão de feedbacks, salvando no banco de dados e enviando um email com o tipo de feedback, comentario e o print da tela do usuário
 
