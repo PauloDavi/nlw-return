@@ -35,7 +35,7 @@ export function WidgetForm() {
       )}
 
       <footer className="text-xs text-neutral-400">
-        feito com ♥ por{' '}
+        Feito com ♥ por{' '}
         <a
           className="underline underline-offset-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-300 disabled:focus:bg-brand-500"
           href="https://portfolio-paulo-davi.vercel.app/"
