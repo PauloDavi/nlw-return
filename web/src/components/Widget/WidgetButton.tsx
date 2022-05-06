@@ -10,7 +10,16 @@ export function WidgetButton() {
         <WidgetForm />
       </Popover.Panel>
 
-      <Popover.Button className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group self-end hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-300 disabled:focus:bg-brand-500">
+      <Popover.Button
+        className={[
+          'bg-brand rounded-full px-3 h-12',
+          'text-text-on-brand-color flex items-center group self-end',
+          'hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-offset-2',
+          'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary focus:ring-brand',
+          'disabled:opacity-50 disabled:hover:bg-brand-hover disabled:focus:bg-brand',
+          'transition-colors',
+        ].join(' ')}
+      >
         <ChatTeardropDots className="w-6 h-6" />
 
         <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear">

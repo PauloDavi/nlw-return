@@ -21,7 +21,14 @@ export function FeedbackSuccessStep({
 
         <button
           onClick={onFeedbackRestartRequested}
-          className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 transition-colors  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 disabled:opacity-50 disabled:hover:bg-brand-300 disabled:focus:bg-brand-500"
+          className={[
+            'py-2 px-6 mt-6 rounded-md border-transparent text-sm leading-6',
+            'bg-light-surface-secondary dark:bg-dark-surface-secondary',
+            'hover:bg-light-surface-secondary-hover dark:hover:bg-dark-surface-secondary-hover',
+            'focus:ring-offset-light-surface-primary dark:focus:ring-offset-dark-surface-primary',
+            'focus:ring-brand disabled:opacity-50 disabled:hover:bg-brand-hover disabled:focus:bg-brand',
+            'transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2',
+          ].join(' ')}
         >
           Quero enviar outro
         </button>

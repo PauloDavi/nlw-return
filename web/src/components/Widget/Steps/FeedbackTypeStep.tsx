@@ -22,7 +22,12 @@ export function FeedbackTypeStep({
             key={key}
             type="button"
             onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
-            className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+            className={[
+              'rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2',
+              'border-transparent transition-transform hover:scale-105 focus:scale-105',
+              'hover:border-brand focus:border-brand focus:outline-none',
+              'bg-light-surface-secondary dark:bg-dark-surface-secondary',
+            ].join(' ')}
           >
             <img src={image.source} alt={image.alt} />
             <span>{title}</span>
