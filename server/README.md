@@ -1,6 +1,6 @@
 # 🐛 BUG FOUND (API)
 
-API feita no NLW Return para submissão de feedbacks, salvando no banco de dados e enviando um email com o tipo de feedback, comentario e o print da tela do usuário
+API feita no NLW Return para submissão de feedbacks, salvando no banco de dados e enviando um email com o tipo de feedback, comentário e o print da tela do usuário
 
 ## :pencil: Funcionalidades
 
@@ -20,7 +20,7 @@ API feita no NLW Return para submissão de feedbacks, salvando no banco de dados
 
 ## :floppy_disk: Como usar
 
-Após clonar o repositorio execute os seguintes passos para iniciar o servidor em modo de desenvolvimento
+Após clonar o repositório execute os seguintes passos para iniciar o servidor em modo de desenvolvimento
 
 ```zsh
 cd nlw-return/server
